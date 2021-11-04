@@ -1,0 +1,19 @@
+{
+	"events": [{
+			"class": "subtitle",
+			"for": "lname",
+			"text": "Family Name",
+			"type": "text",
+			"id": "lname",
+			"name": "lname"
+		},
+    {
+  			"class": "subtitle",
+  			"for": "fname",
+  			"text": "Fist Name",
+  			"type": "text",
+  			"id": "fname",
+  			"name": "fname"
+  		}
+	]
+}

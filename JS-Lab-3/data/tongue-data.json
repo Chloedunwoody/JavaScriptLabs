@@ -1,0 +1,26 @@
+{
+  "tongue":[{
+    "class": "subtitle",
+    "for": "montherTon",
+    "text": "Mother Tongue",
+    "type1": "radio",
+    "name1": "lang",
+    "id1": "lang_f",
+    "value1": "fr",
+    "for1": "lang_f",
+    "text1":"French",
+    "type2": "radio",
+    "name2": "lang",
+    "id2": "lang_e",
+    "value2": "en",
+    "for2": "lang_e",
+    "text2":"English",
+    "type3": "radio",
+    "name3": "lang",
+    "id3": "lang_o",
+    "value3": "ot",
+    "for3": "lang_o",
+    "text3":"Other"
+    }
+  ]
+}

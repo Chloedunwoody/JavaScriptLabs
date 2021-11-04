@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/c08.css">
+    <title>Final</title>
+  </head>
+  <body>
+    <header>
+      <h1>Application Form <br> for fall 2020 admissions</h1>
+    </header>
+    <h2>Step 1 - Identification</h2>
+
+
+    <hr class="style-two">
+<form id="champForm" onsubmit="validateRequired() && validateYear() && validateMonth() && validateDate() && validatePermLet() && validatePermNum()">
+
+    <section id='content'></section>
+
+    <section id='radio'></section>
+
+    <section id='contact'></section>
+
+<hr class="style-two"><br>
+          <div>
+          <label class="subtitle" for="study">Have you ever studied in Quebec?</label>
+              <input name="study" id="studQc-y" type="radio" value="y" required>
+              <label for="studQc_y">Yes</label>
+              <input name="study" id="studQc-n" type="radio" value="n">
+              <label for="studQc_n">No</label>
+          </div>
+          <hr class="style-two">
+          <div>
+            <label class="subtitle" for="permCode">Permanent code</label><br>
+            <small for="permCodeNote1">Note : If you have previously studied in Québec, you will find your Permanent Code on any transcript or report card issued by your school. It is made up of 4 letters and 8 digits. IT IS NOT YOUR HEALTH INSURANCE NUMBER. Leave it blank if you have never studied in Québec.</small><br><br>
+            <label for="permCodeLet">Letters</label>
+            <input id="permLet" class="bd" name="permLet" type="text">
+            <label for="permCodeNum">Numbers</label>
+            <input id="permNum" class="bd" name="permNum" type="text"><br><br>
+              <small for="permCodeNote2" id="permCodeNote2">The validation of the permanent code uses the given information in the form. Please, validate that your 'Family name at birth','First name','Sex' and 'Date of birth' are correctly filled.</small><br>
+          </div>
+<hr class="style-two">
+            <div>
+              <label class="subtitle" for="othFirName" >Other First Names</label><br>
+                <small id="otherNameNote">Note : If you do not have a Permanent Code, enter below any other first name(s) that appear on your birth certificate and that you did not enter above or check the box stating that you have none.</small><br>
+              <input id="othFirName" name="othFirName" type="text">
+              <input class="form-check-input" type="checkbox" value="noOtherfN" id="noOtherfN">
+            <label class="col-4" for="defaultCheck1">No other Fist Names</label>
+          </div>
+<hr class="style-two">
+
+<section id='tongue'></section>
+
+<hr class="style-two">
+         <div>
+             <label class="subtitle" for="progSel">Select Program</label>
+               <select id="progSel" name="progSel">
+                 <option value="2-years Computer Science"required>2-years Computer Science</option>
+                 <option value="3-years Computer Science">3-years Computer Science</option>
+               </select>
+             </div>
+<hr class="style-two">
+             <div>
+               <label class="subtitle" for="semSel">Select Semester</label>
+                 <select id="semSel" name="semSel" >
+                   <option value="1st year 1st semester(3-years)</"required>1st year 1st semester(3-years)</option>
+                   <option value="2nd year 1st year (3-years)2nd">2nd year 1st year (3-years)2nd</option>
+                   <option value="1st year 1st semester(2-years)">1st year 1st semester(2-years)</option>
+                   <option value="2nd year 1st year (2-years)">2nd year 1st year (2-years)</option>
+                 </select>
+               </div>
+               <hr class="style-two">
+               <div>
+                 <label class="subtitle" for="textarea">Selection</label>
+                   <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+               </div>
+<hr class="style-two">
+          <label for="yes">I have checked and verified everything</label>
+
+
+          <input type="checkbox" id="consent" name="consent" value="consent" onchange="document.getElementById('submit').disabled = !this.checked;">
+          <input type="submit" id="submit"  value="Submit" disabled>
+        </form>
+
+
+    <script type="text/javascript" src="js/data-json.js"></script>
+    <script type="text/javascript" src="js/radio-data.js"></script>
+    <script type="text/javascript" src="js/contact-data.js"></script>
+    <script type="text/javascript" src="js/tongue-data.js"></script>
+    <script>
+    var sel1 = document.getElementById('progSel').value;
+    var sel2 = document.getElementById('semSel').value;
+    var selectT = sel1 + '<br>' + sel2;
+
+    document.getElementById("textarea").innerHTML = selectT;
+    </script>
+  </body>
+</html>

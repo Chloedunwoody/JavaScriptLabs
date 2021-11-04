@@ -1,0 +1,20 @@
+{
+  "radio":[{
+    "class": "subtitle",
+    "for": "sex",
+    "text": "Sex",
+    "type1": "radio",
+    "id1": "male",
+    "name1": "sex",
+    "value1": "male",
+    "for1": "male",
+    "text1":"Male",
+    "type2": "radio",
+    "id2": "female",
+    "name2": "sex",
+    "value2": "female",
+    "for2": "female",
+    "text2":"Female"
+    }
+  ]
+}

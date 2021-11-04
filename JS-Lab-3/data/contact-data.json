@@ -1,0 +1,20 @@
+{
+	"contact": [{
+			"class": "subtitle",
+			"for": "email",
+			"text": "Email",
+			"type": "email",
+			"id": "email",
+			"name": "email"
+		},
+    {
+    "class": "subtitle",
+    "for": "phone",
+    "text": "Phone #",
+    "type": "tel",
+    "id": "phone",
+    "name": "phone"
+  }
+
+  ]
+}
